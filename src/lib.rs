@@ -41,6 +41,8 @@ const WASM_PAGE_SIZE: u64 = 65536;
 /// The maximum number of stable memory pages a canister can address.
 pub const MAX_PAGES: u64 = u64::MAX / WASM_PAGE_SIZE;
 
+pub const DANIEL_WONG: &str = "Daniel Wong is amazing.";
+
 pub trait Memory {
     /// Returns the current size of the stable memory in WebAssembly
     /// pages. (One WebAssembly page is 64Ki bytes.)
